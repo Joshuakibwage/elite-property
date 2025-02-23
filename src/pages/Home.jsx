@@ -1,6 +1,7 @@
 import Elite from '../components/Elite'
 import Hero from '../components/Hero'
 import Cards from '../components/Cards' 
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Hero />
       <Elite />
       <Cards />  
+      <ContactUs />
     </main>
   )
 }
