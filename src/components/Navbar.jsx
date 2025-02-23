@@ -79,6 +79,29 @@ const Navbar = () => {
             {nav ? <MdClose size={34}/>  : <GiHamburgerMenu size={34}/>}
           </button>
         </nav>
+        <div className='md:hidden '>
+          {nav && (
+            <ul className='flex flex-col items-center space-y-8 md:hidden bg-gray-800 text-white py-4 h-screen
+            font-bold'>
+              {navItems.map((item, index) => (
+                <li key={index} className='text-white uppercase md:text-sm hover:text-gray-300'>
+                  <NavLink 
+                    to={item.path}
+                    className={({isActive, isPending}) => (
+                         isActive
+                         ? "active"
+                         : isPending
+                         ? "pending"
+                         : ""
+                    )}
+                  >
+                    {item.Link}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
     </header>
   )
 }
