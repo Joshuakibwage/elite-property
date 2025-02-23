@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #23BDFF;
+  --color-secondary: #158BE3;
+  --color-tertiary: #EAEAEA;
+}
+
+.primary-container {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+}
