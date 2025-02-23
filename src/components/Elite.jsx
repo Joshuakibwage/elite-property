@@ -2,7 +2,7 @@
 
 const Elite = () => {
   return (
-    <section>
+    <section className="bg-gray-100">
         <div className="primary-container py-16 flex flex-col md:flex-row items-center gap-16">
             <div className="w-full md:w-1/2 space-y-4">
                 <h2 className="font-bold text-2xl">
